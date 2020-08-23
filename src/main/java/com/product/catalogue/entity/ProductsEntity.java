@@ -40,6 +40,9 @@ public class ProductsEntity extends TrackableEntity<ProductsEntity>{
 
 	@Column(name = "BRAND")
 	private String brand;
+	
+	//@Column(name = "picByte", length = 1000)
+//	private byte[] picByte;
 
 	public String getProductCode() {
 		return productCode;
@@ -97,4 +100,12 @@ public class ProductsEntity extends TrackableEntity<ProductsEntity>{
 		this.brand = brand;
 	}
 
+	/*public byte[] getPicByte() {
+		return picByte;
+	}
+
+	public void setPicByte(byte[] picByte) {
+		this.picByte = picByte;
+	}
+*/
 }

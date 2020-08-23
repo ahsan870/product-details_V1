@@ -30,6 +30,9 @@ public class ProductRequest {
 	@NotNull(message = "Please provide brand")
 	@NotEmpty(message = "Please provide valid brand")
 	private String brand;
+	
+	//@NotEmpty(message = "Please provide valid pic")
+	//private byte[] picByte;
 
 	public String getProductCode() {
 		return productCode;
@@ -86,5 +89,13 @@ public class ProductRequest {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
+/*
+	public byte[] getPicByte() {
+		return picByte;
+	}
 
+	public void setPicByte(byte[] picByte) {
+		this.picByte = picByte;
+	}
+*/
 }
