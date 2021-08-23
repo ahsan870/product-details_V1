@@ -121,7 +121,7 @@ public class ProductController {
 		ProductResponse response = new ProductResponse(MESSAGE + productCode + " updated Successfully");
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
-	
+	 
 	@PostMapping("/upload")
 	public void uploadImage(@RequestParam("imageFile") MultipartFile file) throws IOException {
 		this.bytes = file.getBytes();
